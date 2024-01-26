@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>LNJAK Blog</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Newsletter for the Latvian National Youth Association of Canada">
+    <meta name="author" content="Marcis Upitis">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="'Latvians in Canada' 'Youth Association' Newsletter">
+
+    <!-- Libraries: Bootstrap and JQuery -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Stylesheet -->
+    <link href="./style.css" rel="stylesheet">
+    <!-- Handlebars -->
+    <script src="./libraries/handlebars.js"></script>
+    <!-- Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Validator Library -->
+    <script src="https://unpkg.com/validator@latest/validator.min.js"></script>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="bg-light" style="background-image: url(./assets/riga-skyline.jpeg); background-size: cover; background-position: center;">
+        <!-- Opaque Box Behind Text -->
+        <div style="position: relative; background-color: rgba(0, 0, 0, 0.5); padding-bottom: 10px;">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand d-flex justify-content-center" href="./index.html">
+                    <img src="./assets/lnjak-black.png" alt="Logo" style="max-width: 100%;">
+                </a>
+
+                <!-- Small Description -->
+                <p class="lead" style="color: white; text-align: center;">Explore insightful short-form blog posts about Latvian culture, history, and important issues from the Latvian National Youth Association of Canada.</p>
+
+                <!-- Navigation Bar -->
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse justify-content-center collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./news.html">News</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./events.html">Events</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./blog.html">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./media.html">Gallery</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Blog Posts Section -->
+    <section class="container my-4">
+        <h2>Latest Blog Posts</h2>
+
+        <!-- Blog Post Snippets -->
+        <div class="row">
+
+            <!-- Blog Post 1 -->
+            <div class="col-md-8 mx-auto">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">The Latvian Song & Dance Festival Returns in 2024 💃🏼</h5>
+                        <div class="card-text">
+                            <!-- Blog Image -->
+                            <img src="./assets/lv-s&d19.jpeg" class="card-img-top" alt="overhead view of 2019 edition of the festival in progress" style="padding-bottom: 10px;">
+                            <p>
+                            In the heart of Canada, the Latvian Song and Dance Festival, a dynamic celebration of culture, is set to return to Toronto in 2024. This biennial event brings together the Latvian diaspora through the captivating mediums of song and dance, creating a vibrant tapestry of tradition and unity.
+                            </p>
+                            <p>
+                            Held every five years, the Latvian Song and Dance Festival in Toronto is a unique opportunity for Latvian Canadians to gather and showcase their cultural identity. With the next edition scheduled for 2024, anticipation is building for another extraordinary celebration of Latvian heritage.
+                            </p>
+                            <p>
+                            The festival will once again feature the enchanting choral music that characterizes Latvian tradition. Choirs, resonating with soul-stirring melodies, will fill the air with the passion and resilience of Latvian Canadians, creating a powerful musical symphony.
+                            </p>
+                            <p>
+                            Adorned in vibrant Latvian costumes, dancers will take the stage with choreography that weaves stories of love, nature, and shared history. These dances, passed down through generations, will continue to bridge the gap between Latvia's ancestral roots and the Canadian present.
+                            </p>
+                            <!-- Video Embed -->
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe src="https://www.youtube.com/embed/oEWwv5UMGSg?si=yCqEjt83gg2kiXG3" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen style="padding-bottom: 10px;"></iframe>
+                            </div>
+                            <p>
+                            An essential part of the festival is the commitment to passing on cultural traditions. Children and youth will actively engage, learning the songs and dances that form the core of their Latvian identity.
+                            </p>
+                            <p>
+                            As we look ahead to 2024, the Latvian Song and Dance Festival in Toronto promises to be a resplendent celebration of identity, resilience, and unity. Sign up to our alerts below to be notified when tickets go on sale.
+                            </p>
+                        </div>
+                        <a href="https://latviansongfest.com/">For More Information</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Post 2 -->
+            <div class="col-md-8 mx-auto">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title" style="padding-bottom: 5px;">2023-24 LNJAK Board of Directors</h5>
+                            <p>Introducing the Latvian National Youth Association in Canada (LNJAK) Board for the 2023-24 term – a dynamic and passionate team committed to fostering a sense of community and cultural pride among Latvian youth in Canada. Led by a dedicated group of individuals, the board brings diverse skills and experiences to the forefront, united by a shared vision of promoting Latvian heritage, organizing engaging events, and providing a platform for the younger generation to connect and thrive. With a blend of enthusiasm and expertise, the LNJAK Board for 2023-24 is poised to lead initiatives that will not only strengthen the bonds within the Latvian youth community but also create lasting memories and connections for years to come.
+                            </p>
+                            <!-- Instagram Embed Code -->
+                            <div class="d-flex justify-content-center"> <!-- Add this class for centering -->
+                                <blockquote class="instagram-media text-center" data-instgrm-permalink="https://www.instagram.com/p/CylabmCOxWl/" data-instgrm-version="14" style="margin: 1px; max-width:540px; min-width:326px; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                                    <script async src="https://www.instagram.com/embed.js"></script>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Post 3 -->
+            <div class="col-md-8 mx-auto">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Quick & Easy Rupjmaize Recipe 🍞</h5>
+                        <div class="card-text">
+                            <p>Rye bread (rupjmaize) has always been a staple of the Latvian diet. Since rye and barley were available year-round rye bread quickly became the most important source of subsistence. It was believed that while there was rye bread on the table, no one would go hungry.<br>
+                                <b>Ingredients:</b><br>
+                                    - 750g rye flour<br>
+                                    - 600ml buttermilk<br>
+                                    - 80ml apple juice<br>
+                                    - 4 tbs sugar<br>
+                                    - 1 tbs salt<br>
+                                    - 1 heaped teaspoon instant yeast<br>
+                                    - caraway seeds (optional)<br>
+                            </p>
+                            <!-- Blog Image -->
+                            <img src="./assets/rye.jpeg" class="card-img-top" alt="sliced rye bread">
+                            <p>
+                            <b>Instructions:</b><br>
+                            Warm the buttermilk to blood warm temperature (test by putting couple drops on the inside of the wrist - it should not burn).
+                            In a large bowl mix all dry ingredients together and add all liquids. Mix well. The dough will become very thick. Continue by kneading the dough in the bowl or on a kitchen bench for 15 minutes. The dough will be slightly sticky.
+                            Place the dough back in the bowl and flatten the dough with wet hands.
+                            Cover the bowl with a tea towel and place in a warm spot (above 25 degrees Celsius) to rise for 1-2 hours.
+                            Preheat the oven to 250 degrees Celsius. Line a baking tray with baking paper or lightly oil the pan.
+                            When the dough has risen, wet your hands and split the dough in half to create two loafs. Place both loaves on the pan and let them rise for 30 minutes. When dough has risen, brush both loaves with cold water.
+                            Place the tray in the oven and bake in 250 degrees for 10 minutes, then reduce the temperature to 180 degrees and bake for additional 25 minutes.
+                            </p>
+                        </div>
+                        <a href="https://latvianeats.com/rye-bread/">For the full recipe and more latvian recipes</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Post 4 -->
+            <div class="col-md-8 mx-auto">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title" style="padding-bottom: 5px;">Exploring Rīga's Art Nouveau District 🧳</h5>
+                        <!-- Blog Image -->
+                        <img src="./assets/an0.jpeg" class="card-img-top" alt="birdview of Riga old town" style="padding-bottom: 10px;">
+                        <div class="card-text">
+                            <p>Latvia's cultural heritage comes to life in Rīga's Art Nouveau district, a captivating showcase of architectural brilliance from the early 20th century. Walk through streets adorned with whimsical curves, floral motifs, and mythical creatures – a testament to the Art Nouveau movement that swept through Europe.
+                            </p>
+                            <img src="./assets/an2.jpeg" class="card-img-top" alt="Riga main square showing art nouveau style" style="padding-bottom: 10px;">
+                            <p>Architects like Mikhail Eisenstein and Konstantīns Pēkšēns left an indelible mark on the landscape, crafting buildings that go beyond aesthetics to tell the story of Latvia's cultural evolution. Symbols and motifs in the architecture reflect Latvian folklore, mythology, and the national identity that emerged during this transformative period.
+                            </p>
+                            <img src="./assets/an3.jpeg" class="card-img-top" alt="restaurant patio in old town Riga in the summer" style="padding-bottom: 10px;">
+                            <p>Embark on a walking tour to explore hidden treasures, from delicate ironwork to expressive sculptures. Streets like Alberta Iela and Elizabetes Iela are renowned for their concentration of Art Nouveau masterpieces. Efforts to preserve and restore these buildings, including the Art Nouveau Museum in Konstantīns Pēkšēns' former apartment, ensure this cultural legacy endures.
+                            </p>
+                            </p>
+                            Rīga's Art Nouveau district is more than just a visual feast; it's a journey through time, connecting visitors with Latvia's enduring cultural richness. As you marvel at these architectural wonders, you'll gain a profound appreciation for the nation's ability to express its identity through the language of art and design.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Post 5 -->
+            <div class="col-md-8 mx-auto">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Latvian Roots: A Quick Guide to Genealogy 🌳</h5>
+                        <div class="card-text">
+                            <p>
+                            Are you keen on uncovering your Latvian heritage but find the language barrier daunting? This is your go-to resource for Latvian genealogy, designed especially for those who may not speak Latvian. If you're new to Latvian research, check out these essential blog posts:
+                            </p>
+                            - <a href="http://www.celmina.com/genealogy/2010/04/getting-started-with-latvian-research/">Getting Started with Latvian Research</a><br>
+                            - <a href="http://www.celmina.com/genealogy/2012/05/latvian-genealogy-primer-part-1/">Latvian Genealogy Primer</a>
+                            </p>
+                            <p>
+                            Dive into our blog for comprehensive insights and tips tailored for all levels of Latvian genealogy researchers. Discover the fascinating world of Latvian surnames through our dedicated project, and take your research to the next level with our variety of advanced courses. Join a vibrant community of fellow enthusiasts, where you can share experiences and collaborate on your Latvian genealogy journey. Start today and unlock captivating stories hidden in your family's Latvian roots!
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Blog Image -->
+                    <img src="./assets/roots.png" class="card-img-top" alt="Advert for Discovering latvian roots on castle background">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <div style="display: flex; justify-content: center;">
+        <button onclick="topFunction()" id="backToTopBtn" class="btn btn-primary my-3" style="width: 50%;">Back to Top</button>
+    </div>
+
+
+    <!-- Comment Section using Diquus for blog posts. **Configure when live** -->
+    <div id="disqus_thread" style="margin: 10px;"></div>
+    <script>
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://lnjak.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-light text-center py-3">
+        <div class="container">
+            <!-- Social Media Links -->
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="https://www.instagram.com/lnjak/" class="text-light"><i class="fab fa-instagram fa-3x"></i></a></li>
+                <li class="list-inline-item"><a href="https://www.facebook.com/lnjak/" class="text-light"><i class="fab fa-facebook fa-3x"></i></a></li>
+            </ul>
+
+            <!-- Email Alert Sign-Up Box -->
+            <div class="col-md-6 mx-auto">
+                <div class="input-group mb-3">
+                    <input type="email" class="form-control" id="emailInput" placeholder="Enter your email" aria-label="Enter your email" aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-light" type="button" id="subscribeButton" data-bs-target="#subscribeModal">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal" id="subscribeModal" tabindex="-1" aria-labelledby="subscribeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="subscribeModalLabel">Subscription Confirmation</h5>
+                </div>
+                <div class="modal-body">
+                    <p id="confirmationMessage">Thank you for subscribing!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

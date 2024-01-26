@@ -1,0 +1,256 @@
+/* NAVBAR CSS */
+.nav-item{
+    font-size: 29px;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 15px;
+}
+
+.btn {
+    background-color: #78232a;
+    border-color: #78232a;
+}
+.btn:hover {
+    background-color: #36121a;
+    border-color: #36121a;
+}
+
+.btn:disabled {
+    background-color: #78232a;
+    border-color: #78232a;
+    opacity: 0.5;
+}
+
+/* Custom styles for collapsed navbar */
+@media (max-width: 991px) {
+    .navbar-nav .nav-link {
+        font-size: 18px;
+        margin-left: 15px;
+        text-align: center;
+    }
+}
+
+
+
+/* MEDIA PAGE STYLING */
+div.scroll-container {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+  
+div.scroll-container img {
+    padding: 20px;
+}
+
+.video-thumbnail-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.video-thumbnail {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+.video-overlay {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(157, 34, 53, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.video-thumbnail-container:hover .video-thumbnail {
+    opacity: 0.3;
+}
+
+.video-thumbnail-container:hover .video-overlay {
+    opacity: 1;
+}
+
+.video-overlay-text {
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+.modal-dialog {
+    min-height: 315px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    min-height: 315px;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-body {
+    overflow-y: auto;
+}
+
+.modal-custom-height {
+    max-height: 50px;
+}
+
+
+
+/* CSS FOR NEWS/BLOG PAGES */
+.card {
+    margin-bottom: 10px;
+}
+
+.share-buttons {
+    margin-top: 15px;
+}
+
+.share-buttons a {
+    margin-right: 10px;
+}
+
+
+
+/* CSS FOR EVENT PAGE */
+.event-tile {
+    margin-bottom: 40px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 20px; 
+}
+
+.event-tile p {
+    margin-bottom: 10px;
+}
+
+.event-tile h5 {
+    margin-bottom: 10px;
+}
+
+/* Calendar styling */
+#calendar .fc-toolbar h2 {
+    font-size: 20px;
+}
+
+#calendar .fc-list-day-text, .fc-list-day-side-text {
+    color: #78232a;
+    text-decoration: none;
+}
+
+
+
+/* CSS FOR HOME/INDEX PAGE */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position of next button */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background semi opaque */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+#events-overview .event-tile {
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+@media (min-width: 768px) {
+    #key-info h3 {
+      text-align: center;
+    }
+}
+
+.center-instagram {
+    display: flex;
+    justify-content: center;
+}
+

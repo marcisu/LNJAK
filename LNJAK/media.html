@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>LNJAK Gallery</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Newsletter for the Latvian National Youth Association of Canada">
+    <meta name="author" content="Marcis Upitis">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="'Latvians in Canada' 'Youth Association' Newsletter">
+
+    <!-- Libraries: Bootstrap and JQuery -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Stylesheet -->
+    <link href="./style.css" rel="stylesheet">
+    <!-- Handlebars -->
+    <script src="./libraries/handlebars.js"></script>
+    <!-- Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Validator Library -->
+    <script src="https://unpkg.com/validator@latest/validator.min.js"></script>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="bg-light" style="background-image: url(./assets/riga-skyline.jpeg); background-size: cover; background-position: center;">
+        <!-- Opaque Box Behind Text -->
+        <div style="position: relative; background-color: rgba(0, 0, 0, 0.5); padding-bottom: 10px;">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand d-flex justify-content-center" href="./index.html">
+                    <img src="./assets/lnjak-black.png" alt="Logo" style="max-width: 100%;">
+                </a>
+
+                <!-- Small Description -->
+                <p class="lead" style="color: white; text-align: center;">Explore the vibrant moments captured in images and videos from recent LNJAK events.</p>
+
+                <!-- Navigation Bar -->
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse justify-content-center collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./news.html">News</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./events.html">Events</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./blog.html">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./media.html">Gallery</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Media Gallery Section -->
+    <section class="container my-4">
+        <h3>Photo Gallery</h3>
+
+        <p>Scroll through the images below from our 2023 events!</p>
+        <!-- Image Gallery 1-->
+        <div class="scroll-container" style="height: 500px;">
+            <!-- Image 1 -->
+                <img src="./assets/lnjak_e1.jpeg" class="img-fluid" style="height: 480px; max-width: none;" alt="Pictures from a visit to the Latvian Retriement Residence in Toronto">
+            <!-- Image 2 -->
+                <img src="./assets/lnjak_e2.jpeg" class="img-fluid" style="height: 480px; max-width: none;"alt="Picture of the group who came together to bake Piparkūkas">
+            <!-- Image 3 -->
+                <img src="./assets/lnjak_e3.jpeg" class="img-fluid" style="height: 480px; max-width: none;"alt="LNJAK Community member at a demonstration in support of Ukraine">
+            <!-- Image 4 -->
+                <img src="./assets/lnjak_e4.jpeg" class="img-fluid" style="height: 480px; max-width: none;"alt="LNJAK Community member at a demonstration in support of Ukraine">
+            <!-- Image 5 -->
+                <img src="./assets/lnjak_e5.jpeg" class="img-fluid" style="height: 480px; max-width: none;"alt="Group Photo from the first in person gathering post-covid">
+            <!-- Image 6 -->
+                <img src="./assets/lnjak_e6.jpeg" class="img-fluid" style="height: 480px; max-width: none;"alt="Latvian Flag bearer in traditional dress at independance day celebration">
+            <!-- Image 7 -->
+                <img src="./assets/lnjak_e7.jpeg" class="img-fluid" style="height: 480px; max-width: none;" alt="Overhead view of Piparkūkas making process">
+            <!-- Image 8 -->
+                <img src="./assets/lnjak_e8.jpeg" class="img-fluid" style="height: 480px; max-width: none;"alt="Baltic Youth groups coming together in support of Ukraine">
+            <!-- Image 9 -->
+                <img src="./assets/lnjak_e9.jpeg" class="img-fluid" style="height: 480px; max-width: none;"alt="Pictures from the outdoor skating event in Toronto">
+            <!-- Image 10 -->
+                <img src="./assets/lnjak_e10.jpeg" class="img-fluid" style="height: 480px; max-width: none;"alt="Pictures from ther Pīrāgi making event">
+            <!-- Image 11 -->
+                <img src="./assets/lnjak_e11.jpeg" class="img-fluid" style="height: 480px; max-width: none;"alt="Freshly baked Pīrāgi">
+            <!-- Image 12 -->
+                <img src="./assets/lnjak_e12.jpeg" class="img-fluid" style="height: 480px; max-width: none;"alt="Zoom teleconference event to bring together members from across Canada ">
+        </div>
+
+        <h3>Video Gallery</h3>
+        <p>Below are a few videos highlighting aspects of Latvian Culture and the Latvian Centre in Canada</p>
+
+        <!-- Video Gallery -->
+        <div class="row mt-4">
+            <!-- Video 1 -->
+            <div class="col-md-4 mb-3">
+                <div class="video-thumbnail-container">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#videoModal1">
+                        <img src="./assets/lnsdf1.jpeg" class="img-fluid video-thumbnail" alt="Video Thumbnail 1">
+                        <div class="video-overlay">
+                            <div class="video-overlay-text">Song and Dance Festival</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- Video 2  -->
+            <div class="col-md-4 mb-3">
+                <div class="video-thumbnail-container">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#videoModal2">
+                        <img src="./assets/lvcentre.jpeg" class="img-fluid video-thumbnail" alt="Video Thumbnail 2">
+                        <div class="video-overlay">
+                            <div class="video-overlay-text">Latvian Center Tour</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- Video 3 -->
+            <div class="col-md-4 mb-3">
+                <div class="video-thumbnail-container">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#videoModal3">
+                        <img src="./assets/kokle.jpeg" class="img-fluid video-thumbnail" alt="Video Thumbnail 3">
+                        <div class="video-overlay">
+                            <div class="video-overlay-text">Kokle Performance</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <p>For more videos and photos, be sure to follow us on Social Media. Links below! 📱</p>
+    </section>
+
+    <!-- Video Modal -->
+    <div class="modal" id="videoModal1" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="videoModalLabel">Traditional Performance at Latvian Song and Dance Festival</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <!-- Embedded Video -->
+                        <iframe class="embed-responsive-item" style="min-height: 315px" width="100%" height="100%" src="https://www.youtube.com/embed/TGKKyqGqfOE?si=cR0-C8oIf48ptlUa" title="YouTube video player" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="videoModal2" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="videoModalLabel">Video Tour of Latvian Centre in Canada</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <!-- Embedded Video -->
+                        <iframe class="embed-responsive-item" style="min-height: 315px" width="100%" height="100%" src="https://www.youtube.com/embed/WVvXFbq4phw?si=iy2EwGZVq-NzRc8s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="videoModal3" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="videoModalLabel">Kokle Performance - Traditional Latvian Instrument</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <!-- Embedded Video -->
+                        <iframe class="embed-responsive-item" style="min-height: 315px" width="100%" height="100%" src="https://www.youtube.com/embed/yAwRI1Ahzvw?si=A2pPK9oWTUpkGp7k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-light text-center py-3">
+        <div class="container">
+            <!-- Social Media Links -->
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="https://www.instagram.com/lnjak/" class="text-light"><i class="fab fa-instagram fa-3x"></i></a></li>
+                <li class="list-inline-item"><a href="https://www.facebook.com/lnjak/" class="text-light"><i class="fab fa-facebook fa-3x"></i></a></li>
+            </ul>
+
+            <!-- Email Alert Sign-Up Box -->
+            <div class="col-md-6 mx-auto">
+                <div class="input-group mb-3">
+                    <input type="email" class="form-control" id="emailInput" placeholder="Enter your email" aria-label="Enter your email" aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-light" type="button" id="subscribeButton" data-bs-target="#subscribeModal">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal" id="subscribeModal" tabindex="-1" aria-labelledby="subscribeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="subscribeModalLabel">Subscription Confirmation</h5>
+                </div>
+                <div class="modal-body">
+                    <p id="confirmationMessage">Thank you for subscribing!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

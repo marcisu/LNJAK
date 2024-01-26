@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>LNJAK Home</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Newsletter for the Latvian National Youth Association of Canada">
+    <meta name="author" content="Marcis Upitis">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="'Latvians in Canada' 'Youth Association' Newsletter">
+
+    <!-- Libraries: Bootstrap and JQuery -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Stylesheet -->
+    <link href="./style.css" rel="stylesheet">
+    <!-- Handlebars -->
+    <script src="./libraries/handlebars.js"></script>
+    <!-- Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Validator Library -->
+    <script src="https://unpkg.com/validator@latest/validator.min.js"></script>
+</head>
+
+<body>
+<!-- Header Section -->
+<header class="bg-light" style="background-image: url(./assets/riga-skyline.jpeg); background-size: cover; background-position: center;">
+    <!-- Opaque Box Behind Text -->
+    <div style="position: relative; background-color: rgba(0, 0, 0, 0.5); padding-bottom: 10px;">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand d-flex justify-content-center" href="./index.html">
+                <img src="./assets/lnjak-black.png" alt="Logo" style="max-width: 100%;">
+            </a>
+
+            <!-- Small Description -->
+            <p class="lead" style="color: white; text-align: center;">Welcome to the Latvian National Youth Association of Canada. Connecting Latvian youth across borders.</p>
+
+            <!-- Navigation Bar -->
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse justify-content-center collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./news.html">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./events.html">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./media.html">Gallery</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+
+    <!-- Highlights Section -->
+    <section class="container my-4" id="highlights">
+
+        <!-- Key Events -->
+        <section id="key-events">
+            <h3>Upcoming Events</h3>
+            <div class="row" id="events-overview">
+                <!-- Add your key events content here -->
+                <div class="col-md-4 mx-auto event-tile">
+                    <h5>Slidošanas Vakars (Skating Evening) ⛸️</h5>
+                    <p>Date: January 24, 2024</p>
+                    <p>Location: Nathan Phillips Square, Toronto</p>
+                </div>
+
+                <div class="col-md-4 mx-auto event-tile">
+                    <h5>Valentine's Day Lunch 💝</h5>
+                    <p>Date: February 11, 2024</p>
+                    <p>Location: Latvian Center in Toronto</p>
+                </div>
+
+                <div class="col-md-4 mx-auto event-tile">
+                    <h5>EirovīsŠMIJ 🇪🇺</h5>
+                    <p>Date: March 7 - 9, 2024</p>
+                    <p>Location: In person - TBD, Zoom</p>
+                </div>
+            </div>
+            <a href="./events.html" class="btn btn-primary" style="margin-bottom: 20px;">More Events</a>
+        </section>
+
+        <div class="row" id="key-info">
+            <!-- Key News Articles -->
+            <div class="col-md-6 mx-auto">
+                <h3>Latest News</h3>
+                <!-- News 1 -->
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Statement by the Prime Minister on Latvia’s Independence Day</h5>
+                        <div class="card-text">
+                            <p>
+                                The Prime Minister, Justin Trudeau, today issued the following statement on Latvia’s Independence Day: Today, we join Latvian communities in Canada and around the world to celebrate Latvia’s Independence Day. Canada and Latvia share close ties based on common values of freedom, democracy, and the rule of law, as well as a mutual commitment to transatlantic security.</p>
+                                <img src="./assets/trudeau.jpeg" class="card-img-top" alt="PM Trudeau speaking with a Latvian Foreign Representative">
+                        </div>
+                    </div>
+                </div>
+                <!-- News 2 -->
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Organize your event at the Latvian Centre!</h5>
+                        <div class="card-text">
+                            <p>
+                            If you would like to host an event at the Latvian Center in Canada, we are making it easier than ever for members of our youth association. Whether you would like to organize a personal event or a networking event for the public, we offer many services with the help of partners from our community to make your event a success.
+                            </p>
+                            <img src="./assets/banquet-hall.jpeg" class="card-img-top" alt="banquet hall at the Latvian Centre in Toronto">
+                        </div>
+                    </div>
+                </div>
+                <a href="./news.html" class="btn btn-primary" style="margin-bottom: 20px;">Latest News</a>
+            </div>
+
+            <!-- Key Blog Posts -->
+            <div class="col-md-6 mx-auto">
+                <h3>Blog Posts</h3>
+                <!-- Blog Post 1 -->
+                <div class="card">
+                    <div class="card-body" style="padding-bottom: 0px;">
+                        <h5 class="card-title">The Latvian Song & Dance Festival Returns in 2024 💃🏼</h5>
+                        <div class="card-text">
+                            <!-- Blog Image -->
+                            <img src="./assets/lv-s&d19.jpeg" class="card-img-top" alt="overhead view of 2019 edition of the festival in progress" style="padding-bottom: 10px;">
+                            <p>
+                            In the heart of Canada, the Latvian Song and Dance Festival, a dynamic celebration of culture, is set to return to Toronto in 2024...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Blog Post 2 -->
+                <div class="card">
+                    <div class="card-body" style="padding-bottom: 0px;">
+                        <h5 class="card-title">Exploring Rīga's Art Nouveau District 🧳</h5>
+                        <div class="card-text">
+                            <!-- Blog Image -->
+                            <img src="./assets/an0.jpeg" class="card-img-top" alt="overview of old town of Rīga" style="padding-bottom: 10px;">
+                            <p>
+                            Latvia's cultural heritage comes to life in Rīga's Art Nouveau district, a captivating showcase of architectural brilliance from the early 20th century...</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="./blog.html" class="btn btn-primary" style="margin-bottom: 20px;">Read Blog</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="bg-light pt-3">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>The Latvian National Youth Association of Canada is the foremost organization that unites Latvian youth in Canada. Our non-profit organization connects and unites youth with latvian heritage living in Canada. We organize cultural, social and sport events to promote unity within our diaspora community.</p>
+            <h2>LNJAK Statistics</h2>
+
+            <!-- Icons with Subtext -->
+            <div class="row text-center mt-4">
+
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <i class="fas fa-timeline fa-3x mb-2"></i>
+                    <h5>Years Active</h5>
+                    <p>12</p>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <i class="fas fa-hashtag fa-3x mb-2"></i>
+                    <h5>Social Media Following</h5>
+                    <p>1300+</p>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <i class="fas fa-calendar-alt fa-3x mb-2"></i>
+                    <h5>Events Hosted</h5>
+                    <p>20+</p>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <i class="fas fa-user-tie fa-3x mb-2"></i>
+                    <h5>Board Members</h5>
+                    <p>13</p>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <i class="fas fa-handshake-simple fa-3x mb-2"></i>
+                    <h5>Partner Organizations</h5>
+                    <p>12</p>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <i class="fa-brands fa-canadian-maple-leaf fa-3x mb-2"></i>
+                    <h5>Where we Operate</h5>
+                    <p>All Across Canada</p>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <i class="fas fa-language fa-3x mb-2"></i>
+                    <h5>Languages</h5>
+                    <p>English and Latviešu</p>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <i class="fas fa-location-dot fa-3x mb-2"></i>
+                    <h5>Headquarters</h5>
+                    <p>Toronto</p>
+                </div>
+            </div>
+
+
+            <h5 style="text-align: center;">Introducing the LNJAK Board for 2023-24</h5>
+            <!-- Instagram Embed Code -->
+            <div class="center-instagram">
+                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CylabmCOxWl/" data-instgrm-version="14" style="margin: 1px; max-width:540px; min-width:326px; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                    <script async src="https://www.instagram.com/embed.js"></script>
+                </blockquote>
+            </div> 
+
+            <div class="mt-4">
+                <h2>How to get in Touch:</h2>
+                <p>Send us a Message on Instagram or Facebook if you have any questions or want to get involved. We look forward to hearing from you!</p>
+                <p>Alternatively, send us an email at <a href="mailto:lnjakvalde@gmail.com">lnjakvalde@gmail.com</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-light text-center py-3">
+        <div class="container">
+            <!-- Social Media Links -->
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="https://www.instagram.com/lnjak/" class="text-light"><i class="fab fa-instagram fa-3x"></i></a></li>
+                <li class="list-inline-item"><a href="https://www.facebook.com/lnjak/" class="text-light"><i class="fab fa-facebook fa-3x"></i></a></li>
+            </ul>
+
+            <!-- Email Alert Sign-Up Box -->
+            <div class="col-md-6 mx-auto">
+                <div class="input-group mb-3">
+                    <input type="email" class="form-control" id="emailInput" placeholder="Enter your email" aria-label="Enter your email" aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-light" type="button" id="subscribeButton" data-bs-target="#subscribeModal">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal" id="subscribeModal" tabindex="-1" aria-labelledby="subscribeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="subscribeModalLabel">Subscription Confirmation</h5>
+                </div>
+                <div class="modal-body">
+                    <p id="confirmationMessage">Thank you for subscribing!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
